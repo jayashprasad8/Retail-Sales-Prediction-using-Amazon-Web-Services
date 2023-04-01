@@ -1,6 +1,17 @@
 <html>
 <head>
     <script>
+        
+            const myForm = document.getElementById("myForm");
+
+            myForm.addEventListener("reset", function(event) {
+// Prevent the form from actually resetting
+            event.preventDefault();
+
+// Reset the form fields to their default values
+            myForm.reset();
+        });
+
 
         function submitForm() {
             // Get form values
@@ -704,39 +715,132 @@
     </script>
 </head>
 <body>
-<form >
-    <label for="Holiday">Is it Holiday(Enter 0 for no and 1 for yes):</label><br>
-    <input type="text" id="Holiday" name="Holiday"><br>
-    <label for="Temparature">Temparature:</label><br>
-    <input type="text" id="Temp" name="Temparature"><br>
-    <label for="Fuelprice">Fuel Price:</label><br>
-    <input type="text" id="Fuelprice" name="Fuelprice"><br>
-    <label for="Markdown1">Markdown1:</label><br>
-    <input type="text" id="Markdown1" name="Markdown1"><br>
-    <label for="Markdown2">Markdown2;</label><br>
-    <input type="text" id="Markdown2" name="Markdown2"><br>
-    <label for="Markdown3">Markdown3:</label><br>
-    <input type="text" id="Markdown3" name="Markdown3"><br>
-    <label for="Markdown4">Markdown4:</label><br>
-    <input type="text" id="Markdown4" name="Markdown4"><br>
-    <label for="Markdown5">Markdown5:</label><br>
-    <input type="text" id="Markdown5" name="Markdown5"><br>
-    <label for="CPI">CPI:</label><br>
-    <input type="text" id="CPI" name="CPI"><br>
-    <label for="Unemployment">Unemployment:</label><br>
-    <input type="text" id="Unemployment" name="Unemployment"><br>
-    <label for="Size">Size:</label><br>
-    <input type="text" id="Size" name="Size"><br>
-    <label for="Month">Month:</label><br>
-    <input type="text" id="Month" name="Month"><br>
-    <label for="Type">Type:</label><br>
-    <input type="text" id="Type" name="Type"><br>
-    <label for="Store">Store:</label><br>
-    <input type="text" id="Store" name="Store"> <br>
-    <label for="Department">Department:</label><br>
-    <input type="text" id="Department" name="Department"><br>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+        padding: 8px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button[type="submit"], button[type="reset"] {
+        background-color: #0070f3;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    button[type="submit"]:hover, button[type="reset"]:hover {
+        background-color: #0053a3;
+    }
+</style>
+
+
+<form id="myForm">
+    <label for="Holiday">Is it Holiday(Enter 0 for no and 1 for yes):</label>
+    <input type="text" id="Holiday" name="Holiday" style="width: 150px;" value="0">
+    <label for="Temparature">Temparature:</label>
+    <input type="text" id="Temp" name="Temparature" style="width: 150px;" value="0">
+    <label for="Fuelprice">Fuel Price:</label>
+    <input type="text" id="Fuelprice" name="Fuelprice" style="width: 150px;" value="0">
+    <label for="Markdown1">Markdown1:</label>
+    <input type="text" id="Markdown1" name="Markdown1" style="width: 150px;" value="0">
+    <label for="Markdown2">Markdown2;</label>
+    <input type="text" id="Markdown2" name="Markdown2" style="width: 150px;" value="0">
+    <label for="Markdown3">Markdown3:</label>
+    <input type="text" id="Markdown3" name="Markdown3" style="width: 150px;" value="0">
+    <label for="Markdown4">Markdown4:</label>
+    <input type="text" id="Markdown4" name="Markdown4" style="width: 150px;" value="0">
+    <label for="Markdown5">Markdown5:</label>
+    <input type="text" id="Markdown5" name="Markdown5" style="width: 150px;" value="0">
+    <label for="CPI">CPI:</label>
+    <input type="text" id="CPI" name="CPI" style="width: 150px;" value="0">
+    <label for="Unemployment">Unemployment:</label>
+    <input type="text" id="Unemployment" name="Unemployment" style="width: 150px;" value="0">
+    <label for="Size">Size:</label>
+    <input type="text" id="Size" name="Size" style="width: 150px;" value="0">
+    <label for="Month">Month:</label>
+    <select id="Month" name="Month" style="width: 150px; padding: 5px; font-size: 16px;">
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select><br>
+
+    <label for="Type">Type:</label>
+    <select id="Type" name="Type" style="width: 150px; padding: 5px; font-size: 16px;">
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+    </select><br>
+
+    <label for="Store">Store:</label>
+    <select id="Store" name="Store" style="width: 150px; padding: 5px; font-size: 16px;">
+        <option value="1">1</option>
+        <script>
+            for (var i = 2; i <= 45; i++) {
+                document.write('<option value="' + i + '">' + i + '</option>');
+            }
+        </script>
+    </select>
+
+    <label for="Department">Department:</label>
+    <select id="Store" name="Store" style="width: 150px; padding: 5px; font-size: 16px;">
+        <option value="1">1</option>
+        <script>
+            for (var i = 2; i <= 99; i++) {
+                document.write('<option value="' + i + '">' + i + '</option>');
+            }
+        </script>
+    </select>
+
     <button type="button" onclick="submitForm()">Submit</button>
+    <input type="reset" value="Reset">
 </form>
+
+<script>
+const myForm = document.getElementById("myForm");
+
+myForm.addEventListener("reset", function(event) {
+// Prevent the form from actually resetting
+event.preventDefault();
+
+// Reset the form fields to their default values
+myForm.reset();
+});
+</script>
+
 
 
 
