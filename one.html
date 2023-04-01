@@ -1,0 +1,745 @@
+<html>
+<head>
+    <script>
+
+        function submitForm() {
+            // Get form values
+            const holiday = document.getElementById("Holiday").value;
+            const temperature = document.getElementById("Temp").value;
+            const fuelprice = document.getElementById("Fuelprice").value;
+            const markdown1 = document.getElementById("Markdown1").value;
+            const markdown2 = document.getElementById("Markdown2").value;
+            const markdown3 = document.getElementById("Markdown3").value;
+            const markdown4 = document.getElementById("Markdown4").value;
+            const markdown5 = document.getElementById("Markdown5").value;
+            const cpi = document.getElementById("CPI").value;
+            const unemployment = document.getElementById("Unemployment").value;
+            const size = document.getElementById("Size").value;
+            const month = document.getElementById("Month").value;
+            const type = document.getElementById("Type").value;
+            const store = document.getElementById("Store").value;
+            const department = document.getElementById("Department").value;
+
+            // Determine values for type_b and type_c
+            let type_b = 0;
+            let type_c = 0;
+            let store_2= 0;
+            let store_3= 0;
+            let store_4= 0;
+            let store_5= 0;
+            let store_6= 0;
+            let store_7= 0;
+            let store_8= 0;
+            let store_9= 0;
+            let store_10= 0;
+            let store_11= 0;
+            let store_12= 0;
+            let store_13= 0;
+            let store_14= 0;
+            let store_15= 0;
+            let store_16= 0;
+            let store_17= 0;
+            let store_18= 0;
+            let store_19= 0;
+            let store_20= 0;
+            let store_21= 0;
+            let store_22= 0;
+            let store_23= 0;
+            let store_24= 0;
+            let store_25= 0;
+            let store_26= 0;
+            let store_27= 0;
+            let store_28= 0;
+            let store_29= 0;
+            let store_30= 0;
+            let store_31= 0;
+            let store_32= 0;
+            let store_33= 0;
+            let store_34= 0;
+            let store_35= 0;
+            let store_36= 0;
+            let store_37= 0;
+            let store_38= 0;
+            let store_39= 0;
+            let store_40= 0;
+            let store_41= 0;
+            let store_42= 0;
+            let store_43= 0;
+            let store_44= 0;
+            let store_45= 0;
+            let Dept_2= 0;
+            let Dept_3= 0;
+            let Dept_4= 0;
+            let Dept_5= 0;
+            let Dept_6= 0;
+            let Dept_7= 0;
+            let Dept_8= 0;
+            let Dept_9= 0;
+            let Dept_10= 0;
+            let Dept_11= 0;
+            let Dept_12= 0;
+            let Dept_13= 0;
+            let Dept_14= 0;
+            let Dept_16= 0;
+            let Dept_17= 0;
+            let Dept_18= 0;
+            let Dept_19= 0;
+            let Dept_20= 0;
+            let Dept_21= 0;
+            let Dept_22= 0;
+            let Dept_23= 0;
+            let Dept_24= 0;
+            let Dept_25= 0;
+            let Dept_26= 0;
+            let Dept_27= 0;
+            let Dept_28= 0;
+            let Dept_29= 0;
+            let Dept_30= 0;
+            let Dept_31= 0;
+            let Dept_32= 0;
+            let Dept_33= 0;
+            let Dept_34= 0;
+            let Dept_35= 0;
+            let Dept_36= 0;
+            let Dept_37= 0;
+            let Dept_38= 0;
+            let Dept_39= 0;
+            let Dept_40= 0;
+            let Dept_41= 0;
+            let Dept_42= 0;
+            let Dept_43= 0;
+            let Dept_44= 0;
+            let Dept_45= 0;
+            let Dept_46= 0;
+            let Dept_47= 0;
+            let Dept_48= 0;
+            let Dept_49= 0;
+            let Dept_50= 0;
+            let Dept_51= 0;
+            let Dept_52= 0;
+            let Dept_54= 0;
+            let Dept_55= 0;
+            let Dept_56= 0;
+            let Dept_58= 0;
+            let Dept_59= 0;
+            let Dept_60= 0;
+            let Dept_65= 0;
+            let Dept_67= 0;
+            let Dept_71= 0;
+            let Dept_72= 0;
+            let Dept_74= 0;
+            let Dept_77= 0;
+            let Dept_78= 0;
+            let Dept_79= 0;
+            let Dept_80= 0;
+            let Dept_81= 0;
+            let Dept_82= 0;
+            let Dept_83= 0;
+            let Dept_85= 0;
+            let Dept_87= 0;
+            let Dept_90= 0;
+            let Dept_91= 0;
+            let Dept_92= 0;
+            let Dept_93= 0;
+            let Dept_94= 0;
+            let Dept_95= 0;
+            let Dept_96= 0;
+            let Dept_97= 0;
+            let Dept_98= 0;
+            let Dept_99= 0;
+            if (type === "b") {
+                type_b = 1;
+            } else if (type === "c") {
+                type_c = 1;
+            }
+            if(store==="2")
+            {
+                store_2=1;
+            }else if(store ==="3")
+            {
+                store_3=1;
+            }else if(store ==="4")
+            {
+                store_4=1;
+            }else if(store ==="5")
+            {
+                store_5=1;
+            }else if(store ==="6")
+            {
+                store_6=1;
+            }else if(store ==="7")
+            {
+                store_7=1;
+            }else if(store ==="8")
+            {
+                store_8=1;
+            }else if(store ==="9")
+            {
+                store_9=1;
+            }else if(store ==="10")
+            {
+                store_10=1;
+            }else if(store ==="11")
+            {
+                store_11=1;
+            }else if(store ==="12")
+            {
+                store_12=1;
+            }else if(store ==="13")
+            {
+                store_13=1;
+            }else if(store ==="14")
+            {
+                store_14=1;
+            }else if(store ==="15")
+            {
+                store_15=1;
+            }else if(store ==="16")
+            {
+                store_16=1;
+            }else if(store ==="17")
+            {
+                store_17=1;
+            }else if(store ==="18")
+            {
+                store_18=1;
+            }else if(store ==="19")
+            {
+                store_19=1;
+            }else if(store ==="20")
+            {
+                store_20=1;
+            }else if(store ==="21")
+            {
+                store_21=1;
+            }else if(store ==="22")
+            {
+                store_22=1;
+            }else if(store ==="23")
+            {
+                store_23=1;
+            }else if(store ==="24")
+            {
+                store_24=1;
+            }else if(store ==="25")
+            {
+                store_25=1;
+            }else if(store ==="26")
+            {
+                store_26=1;
+            }else if(store ==="27")
+            {
+                store_27=1;
+            }else if(store ==="28")
+            {
+                store_28=1;
+            }else if(store ==="29")
+            {
+                store_29=1;
+            }else if(store ==="30")
+            {
+                store_30=1;
+            }else if(store ==="31")
+            {
+                store_31=1;
+            }else if(store ==="32")
+            {
+                store_32=1;
+            }else if(store ==="33")
+            {
+                store_33=1;
+            }else if(store ==="34")
+            {
+                store_34=1;
+            }else if(store ==="35")
+            {
+                store_35=1;
+            }else if(store ==="36")
+            {
+                store_36=1;
+            }else if(store ==="37")
+            {
+                store_37=1;
+            }else if(store ==="38")
+            {
+                store_38=1;
+            }else if(store ==="39")
+            {
+                store_39=1;
+            }else if(store ==="40")
+            {
+                store_40=1;
+            }else if(store ==="41")
+            {
+                store_41=1;
+            }else if(store ==="42")
+            {
+                store_42=1;
+            }else if(store ==="43")
+            {
+                store_43=1;
+            }else if(store ==="44")
+            {
+                store_44=1;
+            }else if(store ==="45")
+            {
+                store_45=1;
+            }
+            if(department==="2")
+            {
+                Dept_2=1;
+            }else if(department ==="3")
+            {
+                Dept_3=1
+            }else if(department ==="4")
+            {
+                Dept_4=1
+            }else if(department ==="5")
+            {
+                Dept_5=1
+            }else if(department ==="6")
+            {
+                Dept_6=1
+            }else if(department ==="7")
+            {
+                Dept_7=1
+            }else if(department ==="8")
+            {
+                Dept_8=1
+            }else if(department ==="9")
+            {
+                Dept_9=1
+            }else if(department ==="10")
+            {
+                Dept_10=1
+            }else if(department ==="11")
+            {
+                Dept_11=1
+            }else if(department ==="12")
+            {
+                Dept_12=1
+            }else if(department ==="13")
+            {
+                Dept_13=1
+            }else if(department ==="14")
+            {
+                Dept_14=1
+            }else if(department ==="16")
+            {
+                Dept_16=1
+            }else if(department ==="17")
+            {
+                Dept_17=1
+            }else if(department ==="18")
+            {
+                Dept_18=1
+            }else if(department ==="19")
+            {
+                Dept_19=1
+            }else if(department ==="20")
+            {
+                Dept_20=1
+            }else if(department ==="21")
+            {
+                Dept_21=1
+            }else if(department ==="22")
+            {
+                Dept_22=1
+            }else if(department ==="23")
+            {
+                Dept_23=1
+            }else if(department ==="24")
+            {
+                Dept_24=1
+            }else if(department ==="25")
+            {
+                Dept_25=1
+            }else if(department ==="26")
+            {
+                Dept_26=1
+            }else if(department ==="27")
+            {
+                Dept_27=1
+            }else if(department ==="28")
+            {
+                Dept_28=1
+            }else if(department ==="29")
+            {
+                Dept_29=1
+            }else if(department ==="30")
+            {
+                Dept_30=1
+            }else if(department ==="31")
+            {
+                Dept_31=1
+            }else if(department ==="32")
+            {
+                Dept_32=1
+            }else if(department ==="33")
+            {
+                Dept_33=1
+            }else if(department ==="34")
+            {
+                Dept_34=1
+            }else if(department ==="35")
+            {
+                Dept_35=1
+            }else if(department ==="36")
+            {
+                Dept_36=1
+            }else if(department ==="37")
+            {
+                Dept_37=1
+            }else if(department ==="38")
+            {
+                Dept_38=1
+            }else if(department ==="39")
+            {
+                Dept_39=1
+            }else if(department ==="40")
+            {
+                Dept_40=1
+            }else if(department ==="41")
+            {
+                Dept_41=1
+            }else if(department ==="42")
+            {
+                Dept_42=1
+            }else if(department ==="43")
+            {
+                Dept_43=1
+            }else if(department ==="44")
+            {
+                Dept_44=1
+            }else if(department ==="45")
+            {
+                Dept_45=1
+            }else if(department ==="46")
+            {
+                Dept_46=1
+            }else if(department ==="47")
+            {
+                Dept_47=1
+            }else if(department ==="48")
+            {
+                Dept_48=1
+            }else if(department ==="49")
+            {
+                Dept_49=1
+            }else if(department ==="50")
+            {
+                Dept_50=1
+            }else if(department ==="51")
+            {
+                Dept_51=1
+            }else if(department ==="52")
+            {
+                Dept_52=1
+            }else if(department ==="54")
+            {
+                Dept_54=1
+            }else if(department ==="55")
+            {
+                Dept_55=1
+            }else if(department ==="56")
+            {
+                Dept_56=1
+            }else if(department ==="58")
+            {
+                Dept_58=1
+            }else if(department ==="59")
+            {
+                Dept_59=1
+            }else if(department ==="60")
+            {
+                Dept_60=1
+            }else if(department ==="65")
+            {
+                Dept_65=1
+            }else if(department ==="67")
+            {
+                Dept_67=1
+            }else if(department ==="71")
+            {
+                Dept_71=1
+            }else if(department ==="72")
+            {
+                Dept_72=1
+            }else if(department ==="74")
+            {
+                Dept_74=1
+            }else if(department ==="77")
+            {
+                Dept_77=1
+            }else if(department ==="78")
+            {
+                Dept_78=1
+            }else if(department ==="79")
+            {
+                Dept_79=1
+            }else if(department ==="80")
+            {
+                Dept_80=1
+            }else if(department ==="81")
+            {
+                Dept_81=1
+            }else if(department ==="82")
+            {
+                Dept_82=1
+            }else if(department ==="83")
+            {
+                Dept_83=1
+            }else if(department ==="85")
+            {
+                Dept_85=1
+            }else if(department ==="87")
+            {
+                Dept_87=1
+            }else if(department ==="90")
+            {
+                Dept_90=1
+            }else if(department ==="91")
+            {
+                Dept_91=1
+            }else if(department ==="92")
+            {
+                Dept_92=1
+            }else if(department ==="93")
+            {
+                Dept_93=1
+            }else if(department ==="94")
+            {
+                Dept_94=1
+            }else if(department ==="95")
+            {
+                Dept_95=1
+            }else if(department ==="96")
+            {
+                Dept_96=1
+            }else if(department ==="97")
+            {
+                Dept_97=1
+            }else if(department ==="98")
+            {
+                Dept_98=1
+            }else if(department ==="99")
+            {
+                Dept_99=1
+            }
+
+            // Construct payload object
+
+            const payload1 = {
+                holiday,
+                temperature,
+                fuelprice,
+                markdown1,
+                markdown2,
+                markdown3,
+                markdown4,
+                markdown5,
+                cpi,
+                unemployment,
+                size,
+                month,
+                type_b,
+                type_c,
+                store_2,
+                store_3,
+                store_4,
+                store_5,
+                store_6,
+                store_7,
+                store_8,
+                store_9,
+                store_10,
+                store_11,
+                store_12,
+                store_13,
+                store_14,
+                store_15,
+                store_16,
+                store_17,
+                store_18,
+                store_19,
+                store_20,
+                store_21,
+                store_22,
+                store_23,
+                store_24,
+                store_25,
+                store_26,
+                store_27,
+                store_28,
+                store_29,
+                store_30,
+                store_31,
+                store_32,
+                store_33,
+                store_34,
+                store_35,
+                store_36,
+                store_37,
+                store_38,
+                store_39,
+                store_40,
+                store_41,
+                store_42,
+                store_43,
+                store_44,
+                store_45,
+                Dept_2,
+                Dept_3,
+                Dept_4,
+                Dept_5,
+                Dept_6,
+                Dept_7,
+                Dept_8,
+                Dept_9,
+                Dept_10,
+                Dept_11,
+                Dept_12,
+                Dept_13,
+                Dept_14,
+                Dept_16,
+                Dept_17,
+                Dept_18,
+                Dept_19,
+                Dept_20,
+                Dept_21,
+                Dept_22,
+                Dept_23,
+                Dept_24,
+                Dept_25,
+                Dept_26,
+                Dept_27,
+                Dept_28,
+                Dept_29,
+                Dept_30,
+                Dept_31,
+                Dept_32,
+                Dept_33,
+                Dept_34,
+                Dept_35,
+                Dept_36,
+                Dept_37,
+                Dept_38,
+                Dept_39,
+                Dept_40,
+                Dept_41,
+                Dept_42,
+                Dept_43,
+                Dept_44,
+                Dept_45,
+                Dept_46,
+                Dept_47,
+                Dept_48,
+                Dept_49,
+                Dept_50,
+                Dept_51,
+                Dept_52,
+                Dept_54,
+                Dept_55,
+                Dept_56,
+                Dept_58,
+                Dept_59,
+                Dept_60,
+                Dept_65,
+                Dept_67,
+                Dept_71,
+                Dept_72,
+                Dept_74,
+                Dept_77,
+                Dept_78,
+                Dept_79,
+                Dept_80,
+                Dept_81,
+                Dept_82,
+                Dept_83,
+                Dept_85,
+                Dept_87,
+                Dept_90,
+                Dept_91,
+                Dept_92,
+                Dept_93,
+                Dept_94,
+                Dept_95,
+                Dept_96,
+                Dept_97,
+                Dept_98,
+                Dept_99,
+            };
+            const valueString = Object.values(payload1).join(',');
+            const data1={"data":valueString};
+            console.log(JSON.stringify(data1));
+           
+
+            // Construct API request
+            const apiUrl = "https://ktastorw29.execute-api.us-east-1.amazonaws.com/Development/retail-sales-xgboost";
+            const apiRequest = new Request(apiUrl, {
+                method: "POST",
+                body: JSON.stringify(data1),
+            });
+
+            // Send API request
+            fetch(apiRequest)
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok");
+                    }
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data);
+                    // Handle API response data
+                })
+                .catch((error) => {
+                    console.error(
+                        "There was a problem with the API request:",
+                        error.message
+                    );
+                    // Handle API request error
+                });
+        }
+    </script>
+</head>
+<body>
+<form >
+    <label for="Holiday">Is it Holiday(Enter 0 for no and 1 for yes):</label><br>
+    <input type="text" id="Holiday" name="Holiday"><br>
+    <label for="Temparature">Temparature:</label><br>
+    <input type="text" id="Temp" name="Temparature"><br>
+    <label for="Fuelprice">Fuel Price:</label><br>
+    <input type="text" id="Fuelprice" name="Fuelprice"><br>
+    <label for="Markdown1">Markdown1:</label><br>
+    <input type="text" id="Markdown1" name="Markdown1"><br>
+    <label for="Markdown2">Markdown2;</label><br>
+    <input type="text" id="Markdown2" name="Markdown2"><br>
+    <label for="Markdown3">Markdown3:</label><br>
+    <input type="text" id="Markdown3" name="Markdown3"><br>
+    <label for="Markdown4">Markdown4:</label><br>
+    <input type="text" id="Markdown4" name="Markdown4"><br>
+    <label for="Markdown5">Markdown5:</label><br>
+    <input type="text" id="Markdown5" name="Markdown5"><br>
+    <label for="CPI">CPI:</label><br>
+    <input type="text" id="CPI" name="CPI"><br>
+    <label for="Unemployment">Unemployment:</label><br>
+    <input type="text" id="Unemployment" name="Unemployment"><br>
+    <label for="Size">Size:</label><br>
+    <input type="text" id="Size" name="Size"><br>
+    <label for="Month">Month:</label><br>
+    <input type="text" id="Month" name="Month"><br>
+    <label for="Type">Type:</label><br>
+    <input type="text" id="Type" name="Type"><br>
+    <label for="Store">Store:</label><br>
+    <input type="text" id="Store" name="Store"> <br>
+    <label for="Department">Department:</label><br>
+    <input type="text" id="Department" name="Department"><br>
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+
+
+</body>
+</html>
+
