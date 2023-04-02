@@ -763,8 +763,12 @@
 
 
 <form id="myForm">
-    <label for="Holiday">Is it Holiday(Enter 0 for no and 1 for yes):</label>
-    <input type="text" id="Holiday" name="Holiday" style="width: 150px;" value="0">
+   <label>Is it Holiday? &nbsp;&nbsp;
+    <input type="radio" id="Holiday" name="Holiday" style="width:20px" value="0">
+    <label for="Holiday_No">No</label>
+    <input type="radio" id="Holiday" name="Holiday" style="width: 20px;" checked="checked" value="1">
+    <label for="Holiday_Yes">Yes</label><br>
+	</label>
     <label for="Temparature">Temparature:</label>
     <input type="text" id="Temp" name="Temparature" style="width: 150px;" value="0">
     <label for="Fuelprice">Fuel Price:</label>
