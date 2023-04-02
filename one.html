@@ -716,30 +716,67 @@
 </head>
 <body>
 <style>
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #f5f5f5;
-        padding: 20px;
-        border-radius: 5px;
-        font-family: Arial, sans-serif;
-    }
+    
+    
+	
+	body {
+			background-size: cover;
+			background-position: center center;
+			font-family: Arial, sans-serif;
+			background-color: #93D3D3;
+		}
+		h2{
+		 color:#a91b0d
+		}
+		i{
+		color:#900603
+		}
+		
+		.form-container { 
+		background-color: #F9F5E3;
+			box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+			padding: 0.4rem;
+			max-width: 945px;
+			margin: 0 auto;
+			width: 100%;
+		}
 
-    label {
-        font-weight: bold;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
+		.col {
+			display: inline-block;
+			vertical-align: top;
+			width: 310px;
+			box-sizing: border-box;
+			padding: 0 1rem;
+		}
 
-    input[type="text"] {
-        padding: 8px;
-        border: none;
-        border-radius: 3px;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-        margin-bottom: 15px;
-        width: 100%;
-        box-sizing: border-box;
+		.form-group {
+			margin-bottom: 1rem;
+			
+			display: inline-block;
+		}
+
+		label {
+		 
+		background-color: #F9F5E3;
+			display: inline-block;
+			margin-bottom: 0.5rem;
+			font-weight: bold;
+			color:#0053a3;
+		}
+
+	
+
+    input[type="text"], input[type="radio"], select{
+	 
+		background-color: #F9F5E3;
+			width: 100%;
+			padding: 0.5rem;
+			border-radius: 2px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			font-size: 1rem;
+			margin-top: 0.5rem;
+			color:#0053a3;
     }
 
    button[type="button"], input[type=reset] {
@@ -752,44 +789,50 @@
             	  cursor: pointer;
             	}
 
-    button[type="button"]:hover, button[type="reset"]:hover {
+    button[type="button"]:hover, input[type=reset]:hover {
         background-color: #0053a3;
     }
 
-    button[type="submit"]:hover, button[type="reset"]:hover {
-        background-color: #0053a3;
-    }
 </style>
+<center><br/><p>
+<h2>Crystalize Retail Predictions</h2>
+<i>Amplify your sales strategy</i></p></center>
 
-
+	<div class="form-container">
 <form id="myForm">
-   <label>Is it Holiday? &nbsp;&nbsp;
-    <input type="radio" id="Holiday" name="Holiday" style="width:20px" value="0">
-    <label for="Holiday_No">No</label>
-    <input type="radio" id="Holiday" name="Holiday" style="width: 20px;" checked="checked" value="1">
-    <label for="Holiday_Yes">Yes</label><br>
+<div class="col">
+	<div class="form-group">
+	<br/>
+	<label>Type: &nbsp;&nbsp;
+    <input type="radio" id="Type" name="Type" style="width:20px" value="a" checked="checked">
+    <label>A</label>  
+	<input type="radio" id="Type" name="Type" style="width:20px" value="b">
+    <label>B</label> 
+	<input type="radio" id="Type" name="Type" style="width:20px" value="c">
+    <label>C</label>
 	</label>
-    <label for="Temparature">Temparature:</label>
-    <input type="text" id="Temp" name="Temparature" style="width: 150px;" value="0">
-    <label for="Fuelprice">Fuel Price:</label>
-    <input type="text" id="Fuelprice" name="Fuelprice" style="width: 150px;" value="0">
-    <label for="Markdown1">Markdown1:</label>
-    <input type="text" id="Markdown1" name="Markdown1" style="width: 150px;" value="0">
-    <label for="Markdown2">Markdown2;</label>
-    <input type="text" id="Markdown2" name="Markdown2" style="width: 150px;" value="0">
-    <label for="Markdown3">Markdown3:</label>
-    <input type="text" id="Markdown3" name="Markdown3" style="width: 150px;" value="0">
-    <label for="Markdown4">Markdown4:</label>
-    <input type="text" id="Markdown4" name="Markdown4" style="width: 150px;" value="0">
-    <label for="Markdown5">Markdown5:</label>
-    <input type="text" id="Markdown5" name="Markdown5" style="width: 150px;" value="0">
-    <label for="CPI">CPI:</label>
-    <input type="text" id="CPI" name="CPI" style="width: 150px;" value="0">
-    <label for="Unemployment">Unemployment:</label>
-    <input type="text" id="Unemployment" name="Unemployment" style="width: 150px;" value="0">
-    <label for="Size">Size:</label>
-    <input type="text" id="Size" name="Size" style="width: 150px;" value="0">
-    <label for="Month">Month:</label>
+<br/>
+    <label for="Store">Store:
+    <select id="Store" name="Store" style="width: 150px; padding: 5px; font-size: 16px;">
+        <option value="1">1</option>
+        <script>
+            for (var i = 2; i <= 45; i++) {
+                document.write('<option value="' + i + '">' + i + '</option>');
+            }
+        </script>
+    </select></label>
+<br/>
+    <label for="Department">Department:
+    <select id="Store" name="Store" style="width: 150px; padding: 5px; font-size: 16px;">
+        <option value="1">1</option>
+        <script>
+            for (var i = 2; i <= 99; i++) {
+                document.write('<option value="' + i + '">' + i + '</option>');
+            }
+        </script>
+    </select></label>
+	<br/>
+	 <label for="Month">Month:
     <select id="Month" name="Month" style="width: 150px; padding: 5px; font-size: 16px;">
         <option value="1">January</option>
         <option value="2">February</option>
@@ -803,36 +846,47 @@
         <option value="10">October</option>
         <option value="11">November</option>
         <option value="12">December</option>
-    </select><br>
-
-    <label>Type: &nbsp;&nbsp;
-    <input type="radio" id="Type" name="Type" style="width:20px" value="a">
-    <label>A</label>  
-	<input type="radio" id="Type" name="Type" style="width:20px" value="b">
-    <label>B</label> 
-	<input type="radio" id="Type" name="Type" style="width:20px" value="c">
-    <label>C</label>
-	</label><br>
-
-    <label for="Store">Store:</label>
-    <select id="Store" name="Store" style="width: 150px; padding: 5px; font-size: 16px;">
-        <option value="1">1</option>
-        <script>
-            for (var i = 2; i <= 45; i++) {
-                document.write('<option value="' + i + '">' + i + '</option>');
-            }
-        </script>
-    </select>
-
-    <label for="Department">Department:</label>
-    <select id="Store" name="Store" style="width: 150px; padding: 5px; font-size: 16px;">
-        <option value="1">1</option>
-        <script>
-            for (var i = 2; i <= 99; i++) {
-                document.write('<option value="' + i + '">' + i + '</option>');
-            }
-        </script>
-    </select>
+    </select></label>
+	<br/><br/>
+   <label>Is it Holiday? &nbsp;&nbsp;
+    <input type="radio" id="Holiday" name="Holiday" style="width:20px" value="0">
+    <label for="Holiday_No">No</label>
+    <input type="radio" id="Holiday" name="Holiday" style="width: 20px;" checked="checked" value="1">
+    <label for="Holiday_Yes">Yes</label>
+	</label>	
+	</div></div>
+	
+	
+<div class="col">
+	<div class="form-group">
+    <label for="Markdown1">Markdown1:
+    <input type="text" id="Markdown1" name="Markdown1" style="width: 150px;" value="0"></label>
+    <label for="Markdown2">Markdown2:
+    <input type="text" id="Markdown2" name="Markdown2" style="width: 150px;" value="0"></label>
+    <label for="Markdown3">Markdown3:
+    <input type="text" id="Markdown3" name="Markdown3" style="width: 150px;" value="0"></label>
+    <label for="Markdown4">Markdown4:
+    <input type="text" id="Markdown4" name="Markdown4" style="width: 150px;" value="0"></label>
+    <label for="Markdown5">Markdown5:
+    <input type="text" id="Markdown5" name="Markdown5" style="width: 150px;" value="0"></label>
+	</div></div>
+	
+	
+<div class="col">
+	<div class="form-group">
+    <label for="CPI">CPI:
+    <input type="text" id="CPI" name="CPI" style="width: 150px;" value="0"></label>
+    <label for="Unemployment">Unemployment:
+    <input type="text" id="Unemployment" name="Unemployment" style="width: 150px;" value="0"></label>
+    <label for="Size">Size:
+    <input type="text" id="Size" name="Size" style="width: 150px;" value="0"></label>
+<label for="Temparature">Temparature:
+    <input type="text" id="Temp" name="Temparature" style="width: 150px;" value="0"></label>
+    <label for="Fuelprice">Fuel Price:
+    <input type="text" id="Fuelprice" name="Fuelprice" style="width: 150px;" value="0"></label>
+	
+    
+	</div></div>
 <center>
     <button type="button" onclick="submitForm()">Submit</button>
     <input type="reset" value="Reset">
