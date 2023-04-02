@@ -814,20 +814,20 @@
 <br/>
     <label for="Store">Store:
     <select id="Store" name="Store" style="width: 150px; padding: 5px; font-size: 16px;">
-        <option value="1">1</option>
         <script>
-            for (var i = 2; i <= 45; i++) {
-                document.write('<option value="' + i + '">' + i + '</option>');
+        var storeArray = [ "Supermercado North-east",  "Neighborhood Market North-east",  "Outlet Store 2 North-east",  "North-east Express Mall", "North-east Campus Mall" , "Hypermarket North North-east",  "Supermarket North-east",  "Bodega Aurrera North-east",  "Store Club Now North-east", "Neighborhood Market Oceania",  "Downtown Discount Store Oceania",  "Outlet Store 1 Oceania",  "Oceania Express Mall", "Oceania Campus Mall" , "Hypermarket North Oceania",  "Supermarket Oceania",  "Bodega Aurrera Oceania",  "Store Club Now Oceania",  "Academy Store Oceania",  "Grocery Delivery Oceania",  "Store Health Optical Oceania", "Store Health Dental Care Oceania",   "Campus  Center Oceania",   "Store Club Cafe Oceania",  "Store Club Game Station Oceania",  "Grocery Pickup Oceania",  "Service Center Oceania",  "Garden Center Oceania", "Supermercado Mid-west",  "Neighborhood Market Mid-west",  "Downtown Discount Store Mid-west",  "Outlet Store 2 Mid-west",  "Mid-west Express Mall", "Mid-west Campus Mall" , "Hypermarket North Mid-west",  "Supermarket Mid-west",  "Bodega Aurrera Mid-west",  "Store Club Now Mid-west",  "Academy Store Mid-west",  "Grocery Delivery Mid-west", "Store Health Pharmacy Mid-west",  "Store Health Optical Mid-west", "Store Health Dental Care Mid-west",   "Campus  Center Mid-west",     "Garden Center Mid-west"];
+            for (var i = 1; i < 46; i++) {
+                document.write('<option value="' + (i) + '">' +storeArray[i-1] + '</option>');
             }
         </script>
     </select></label>
 <br/>
     <label for="Department">Department:
-    <select id="Store" name="Store" style="width: 150px; padding: 5px; font-size: 16px;">
-        <option value="1">1</option>
+    <select id="Department" name="Department" style="width: 150px; padding: 5px; font-size: 16px;">
         <script>
-            for (var i = 2; i <= 99; i++) {
-                document.write('<option value="' + i + '">' + i + '</option>');
+        var departmentArray = [  "Apparel",  "Beauty",  "Electronics",  "Home Goods",  "Jewelry",  "Sporting Goods",  "Toys",  "Grocery",  "Footwear",  "Books",  "Music",  "Movies",  "Video Games",  "Outdoor",  "Office Supplies",  "Pet Supplies",  "Automotive",  "Hardware",  "Health",  "Fitness",  "Appliances",  "Baby",  "Bakery",  "Bath",  "Bedding",  "Beverages",  "Cameras",  "Candles",  "Candy",  "Canned Goods",  "Car Parts",  "Cell Phones",  "Cleaning Supplies",  "Coffee & Tea",  "Collectibles",  "Computers",  "Cookware",  "Cosmetics",  "Crafts",  "Dairy",  "Decor",  "Dental Care",  "Dog Food",  "Dresses",  "Dry Goods",  "Eyewear",  "Feminine Care",  "Flowers",  "Fragrances",  "Furniture",  "Gardening",  "Gifts",  "Gourmet Foods",  "Grains",  "Hair Care",  "Handbags",  "Hats",  "Holiday",  "Home Decor",  "Household Goods",  "Ice Cream",  "Infant Formula", "Kids",  "Kitchen",  "Laundry",  "Lawn & Garden",  "Lingerie",  "Luggage",  "Makeup",  "Meat",  "Men's Clothing",  "Motorcycle Parts",  "Nail Care",  "Nutrition",  "Outdoor Living",  "Paint",  "Paper Goods",  "Party Supplies",  "Perfume",  "Personal Care",  "Photo",  "Plumbing",  "Rugs",  "School Supplies",  "Shaving",  "Shoes",  "Skin Care",  "Sleepwear",  "Snacks",  "Socks",   "Spirits",  "Sunglasses",  "Swimwear",  "Tableware",  "Tools",   "Toys & Games",  "Trousers",   "Vitamins", "Watches"];
+            for (var i = 1; i < 100; i++) {
+                document.write('<option value="' + (i) + '">' + departmentArray[i-1] + '</option>');
             }
         </script>
     </select></label>
